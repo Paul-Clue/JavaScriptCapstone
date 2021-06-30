@@ -1,7 +1,6 @@
 import 'regenerator-runtime/runtime';
 import 'phaser';
 import config from './Config/config';
-// import GameScene from './scenes/GameScene';
 import WorldScene from './scenes/WorldScene';
 import BootScene from './scenes/BootScene';
 import PreloaderScene from './scenes/PreloaderScene';
@@ -10,11 +9,10 @@ import OptionsScene from './scenes/OptionsScene';
 import CreditsScene from './scenes/CreditsScene';
 import Model from './Model';
 import GameOverScene from './scenes/GameOverScene';
-import leaderBoardScene from './leaderBoardScene'
+import leaderBoardScene from './leaderBoardScene';
 
- 
-class Game extends Phaser.Game {
-  constructor () {
+class Game extends Phaser.Game { // eslint-disable-line
+  constructor() {
     super(config);
     const model = new Model();
     this.globals = { model, bgMusic: null };
@@ -30,5 +28,5 @@ class Game extends Phaser.Game {
     this.scene.start('Boot');
   }
 }
- 
+
 window.game = new Game();

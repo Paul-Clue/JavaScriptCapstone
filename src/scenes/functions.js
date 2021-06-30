@@ -1,4 +1,4 @@
-const datas = async(url = '') => {
+const datas = async (url = '') => {
   const response = await fetch(url, {
     method: 'GET',
     mode: 'cors',
@@ -7,14 +7,14 @@ const datas = async(url = '') => {
     redirect: 'follow',
     referrerPolicy: 'no-referrer',
     headers: {
-      'Content-type': 'application/json; charset=UTF-8'
+      'Content-type': 'application/json; charset=UTF-8',
     },
-  })
-  let have = await response.json();
+  });
+  const have = await response.json();
   return have;
-}
+};
 
-const postData = async(data = {}) => {
+const postData = async (data = {}) => {
   const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ip0JlGDyAdoLM8OImZTq/scores/', {
     method: 'POST',
     mode: 'cors',
@@ -23,14 +23,14 @@ const postData = async(data = {}) => {
     redirect: 'follow',
     referrerPolicy: 'no-referrer',
     headers: {
-      'Content-type': 'application/json; charset=UTF-8'
+      'Content-type': 'application/json; charset=UTF-8',
     },
-    body: JSON.stringify(data)
-  })
-  let have = await response.json();
+    body: JSON.stringify(data),
+  });
+  const have = await response.json();
   // let have2 = have.then(function (data) {return data});
   // console.log('This is have: ' + have);
   return have;
-}
+};
 
-export { datas, postData};
+export { datas, postData };

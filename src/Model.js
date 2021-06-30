@@ -1,4 +1,5 @@
 export default class Model {
+  /* eslint-disable */
   constructor() {
     this._soundOn = true;
     this._musicOn = true;
@@ -29,4 +30,3 @@ export default class Model {
     return this._bgMusicPlaying;
   }
 }
-

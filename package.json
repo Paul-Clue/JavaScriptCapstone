@@ -6,7 +6,7 @@
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
-    "babel-core": "6",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^27.0.6",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.7.0",
@@ -16,7 +16,7 @@
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
   },
-   "scripts": {
+  "scripts": {
     "test": "jest"
   },
   "browserslist": [

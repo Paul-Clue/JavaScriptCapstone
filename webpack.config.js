@@ -1,15 +1,15 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const webpack = require('webpack');
+const webpack = require('webpack'); // eslint-disable-line
 
 module.exports = {
   entry: {
-    app: './src/index.js'
+    app: './src/index.js',
   },
 
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'app.bundle.js'
+    filename: 'app.bundle.js',
   },
 
   module: {
@@ -21,10 +21,10 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env'],
-          }
-        }
-      }
-    ]
+          },
+        },
+      },
+    ],
   },
 
   devServer: {
@@ -36,16 +36,15 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, 'index.html'),
-          to: path.resolve(__dirname, 'build')
+          to: path.resolve(__dirname, 'build'),
         },
         {
           from: path.resolve(__dirname, 'src/assets'),
           to: path.resolve(__dirname, 'build/assets'),
         },
-      ]
+      ],
     }),
 
   ],
 
-  
-}
+};

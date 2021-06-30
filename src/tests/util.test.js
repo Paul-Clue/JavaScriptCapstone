@@ -1,4 +1,4 @@
-import { postData, datas} from '../scenes/functions.js';
+import { postData, datas } from '../scenes/functions';
 
 global.fetch = jest.fn(() => Promise.resolve({
   json: () => Promise.resolve('Resolve'),
@@ -8,10 +8,9 @@ beforeEach(() => {
   fetch.mockClear();
 });
 
-
 describe('postData function', () => {
   test('it should save scores to scoreboard api', async () => {
-    const playerInfo = { "user": "Joe", "score":  30};
+    const playerInfo = { user: 'Joe', score: 30 };
     fetch.mockImplementationOnce(() => Promise.resolve({ json: () => Promise.resolve('Leaderboard score created correctly.') }));
     await expect(postData(playerInfo)).resolves.toEqual('Leaderboard score created correctly.');
   });
