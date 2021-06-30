@@ -4,13 +4,20 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
     "babel-core": "6",
+    "babel-jest": "^27.0.6",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.7.0",
     "copy-webpack-plugin": "^9.0.1",
+    "jest": "^27.0.6",
     "webpack": "^5.36.2",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
+  },
+   "scripts": {
+    "test": "jest"
   },
   "browserslist": [
     "last 3 and_chr versions",

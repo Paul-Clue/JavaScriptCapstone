@@ -40,21 +40,21 @@ export default class leaderBoardScene extends Phaser.Scene {
 				}
 				list2.style.display = 'block';
 				})
-			async function datas(url = ''){
-				const response = await fetch(url, {
-					method: 'GET',
-					mode: 'cors',
-					cache: 'no-cache',
-					credentials: 'same-origin',
-					redirect: 'follow',
-					referrerPolicy: 'no-referrer',
-					headers: {
-						'Content-type': 'application/json; charset=UTF-8'
-					},
-				})
-				let have = await response.json();
-				return have;
-		}
+		// 	async function datas(url = ''){
+		// 		const response = await fetch(url, {
+		// 			method: 'GET',
+		// 			mode: 'cors',
+		// 			cache: 'no-cache',
+		// 			credentials: 'same-origin',
+		// 			redirect: 'follow',
+		// 			referrerPolicy: 'no-referrer',
+		// 			headers: {
+		// 				'Content-type': 'application/json; charset=UTF-8'
+		// 			},
+		// 		})
+		// 		let have = await response.json();
+		// 		return have;
+		// }
 	}
 }
 

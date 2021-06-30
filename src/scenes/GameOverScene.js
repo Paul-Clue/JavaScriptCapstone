@@ -57,7 +57,7 @@ export default class GameOverScene extends Phaser.Scene {
         //   TO POST THE SCORES:
         //   /games/:id/scores/
     
-        grab = postData('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ip0JlGDyAdoLM8OImZTq/scores/', playerInfo)
+        grab = postData( playerInfo)
         .then(function (response) {
             if (response.ok) { 
               return response.json();
@@ -84,24 +84,24 @@ export default class GameOverScene extends Phaser.Scene {
     // console.log(grab);
 
 
-    async function postData(url = '', data = {}){
-      const response = await fetch(url, {
-        method: 'POST',
-        mode: 'cors',
-        cache: 'no-cache',
-        credentials: 'same-origin',
-        redirect: 'follow',
-        referrerPolicy: 'no-referrer',
-        headers: {
-          'Content-type': 'application/json; charset=UTF-8'
-        },
-        body: JSON.stringify(data)
-      })
-      let have = await response.json();
-      // let have2 = have.then(function (data) {return data});
-      // console.log('This is have: ' + have);
-      return have;
-    }
+    // async function postData(url = '', data = {}){
+    //   const response = await fetch(url, {
+    //     method: 'POST',
+    //     mode: 'cors',
+    //     cache: 'no-cache',
+    //     credentials: 'same-origin',
+    //     redirect: 'follow',
+    //     referrerPolicy: 'no-referrer',
+    //     headers: {
+    //       'Content-type': 'application/json; charset=UTF-8'
+    //     },
+    //     body: JSON.stringify(data)
+    //   })
+    //   let have = await response.json();
+    //   // let have2 = have.then(function (data) {return data});
+    //   // console.log('This is have: ' + have);
+    //   return have;
+    // }
   }
 };
 
