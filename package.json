@@ -18,7 +18,7 @@
   },
   "scripts": {
     "test": "jest",
-    "start": "webpack serve --mode development --open",
+    "start": "webpack serve --mode development --open"
   },
   "browserslist": [
     "last 3 and_chr versions",
