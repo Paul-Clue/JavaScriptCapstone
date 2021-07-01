@@ -9,7 +9,7 @@ import OptionsScene from './scenes/OptionsScene';
 import CreditsScene from './scenes/CreditsScene';
 import Model from './Model';
 import GameOverScene from './scenes/GameOverScene';
-import leaderBoardScene from './leaderBoardScene';
+import leaderBoardScene from './scenes/leaderBoardScene';
 
 class Game extends Phaser.Game { // eslint-disable-line
   constructor() {

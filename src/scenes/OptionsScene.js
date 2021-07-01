@@ -7,7 +7,6 @@ export default class OptionsScene extends Phaser.Scene { // eslint-disable-line
   }
 
   create() {
-
     this.model = this.sys.game.globals.model;
 
     this.text = this.add.text(100, 100, 'Options', { fontSize: 25 });
