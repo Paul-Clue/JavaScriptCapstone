@@ -42,7 +42,7 @@ module.exports = {
     new webpack.DefinePlugin({
       'typeof CANVAS_RENDERER': JSON.stringify(true),
       'typeof WEBGL_RENDERER': JSON.stringify(true),
-    })
+    }),
 
   ],
   devServer: {
