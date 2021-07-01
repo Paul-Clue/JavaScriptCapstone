@@ -24,7 +24,6 @@ class Game extends Phaser.Game { // eslint-disable-line
     this.scene.add('Credits', CreditsScene);
     this.scene.add('Game', GameOverScene);
     this.scene.add('Score', leaderBoardScene);
-    // this.scene.start('Game');
     this.scene.start('Boot');
   }
 }

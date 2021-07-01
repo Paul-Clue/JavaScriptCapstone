@@ -9,13 +9,15 @@
 
 ## Game instructions
 
+- How To Play: Use the arrow keys on your key board to move the ninja around and collect stars.
 - Players must try to collect the stars as fast as they can.
 - To collect a star, simply walk through it.
-- Players must find the Secret start before time runs out.
+- Players must find the Secret star before time runs out.
 - The time acts as the score.
 - The goal is to find the secret star in the least amount of time.
 - The secret star might be trapped inside of an obstacle such as a tree or unfinished building. If the secret star is one of those trapped stars, then the player will not get the highest score. One must be fast and lucky to get the highest score.
-- After a game has finished, the leaderboard will pop-up to show the player where he stands among the best Secret Ninja Star players.
+- After a game has finished, the leader-board will pop-up to show the player where he stands among the best Secret Ninja Star players.
+- ## Only the top 10 lowest scores will be seen in the leader board.
 
 
 [Click Here  to read the Game Design Document](./game-instructions)
@@ -30,7 +32,7 @@
 
 ## Live Demo
 
-[Play Cat Jump](https://paul-clue.github.io/JavaScriptCapstone/)
+[Secret Ninja Star](https://paul-clue.github.io/JavaScriptCapstone/)
 
 
 ## Getting Started

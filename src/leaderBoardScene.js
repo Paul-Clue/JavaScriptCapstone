@@ -1,5 +1,6 @@
 import 'phaser'; // eslint-disable-line
 import { datas } from './scenes/functions';
+import Button from './Objects/Button';
 
 export default class leaderBoardScene extends Phaser.Scene { // eslint-disable-line
   constructor() {
@@ -32,5 +33,7 @@ export default class leaderBoardScene extends Phaser.Scene { // eslint-disable-l
         }
         list2.style.display = 'block';
       });
+
+      this.menuButton = new Button(this, 160, 210, 'blueButton1', 'blueButton2', 'Menu', 'Title');
   }
 }

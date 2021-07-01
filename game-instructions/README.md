@@ -10,7 +10,7 @@ Name: Secret Ninja Star.
 
 Type: Role Playing Game (RPG)
 
-Core Philosophie: A ninja collecting ninja stars in order to find the secret one.
+Core Philosophy: A ninja collecting ninja stars in order to find the secret one.
 
 
 Core Mechanics:
@@ -18,7 +18,7 @@ Core Mechanics:
 - Stars are scattered all over the game world.
 - Ninja can move in all directions in order to collect the stars.
 - The score is kept by the clock.
-- The leaderboard displays the players who found the secret star the fastest.
+- The leader-board displays the players who found the secret star the fastest.
 
 
 Nice to Have Features:
@@ -37,7 +37,7 @@ Milestones:
  -- Setting up Game.
  -- Implement Core Mechanics (Stars vanishing when player touches them).
 - Day 4.
- -- Implement Core Mechanics (score and leaderboard system).
+ -- Implement Core Mechanics (score and leader-board system).
  -- Implement nice to Have Features (not implemented due to time constrain).
 - Day 5.
  -- Tests.

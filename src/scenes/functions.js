@@ -28,8 +28,6 @@ const postData = async (data = {}) => {
     body: JSON.stringify(data),
   });
   const have = await response.json();
-  // let have2 = have.then(function (data) {return data});
-  // console.log('This is have: ' + have);
   return have;
 };
 

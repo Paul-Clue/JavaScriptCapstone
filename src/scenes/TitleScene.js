@@ -9,13 +9,13 @@ export default class TitleScene extends Phaser.Scene { // eslint-disable-line
   }
 
   create() {
-    // Game
+    const list2 = document.querySelector('#scoreList');
+    list2.style.display = 'none';
+
     this.gameButton = new Button(this, config.width / 2, config.height / 2 - 50, 'blueButton1', 'blueButton2', 'Play', 'World');
 
-    // Options
     this.optionsButton = new Button(this, config.width / 2, config.height / 2, 'blueButton1', 'blueButton2', 'Options', 'Options');
 
-    // Credits
     this.creditsButton = new Button(this, config.width / 2, config.height / 2 + 50, 'blueButton1', 'blueButton2', 'Credits', 'Credits');
 
     this.model = this.sys.game.globals.model;
