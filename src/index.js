@@ -1,4 +1,4 @@
-import 'regenerator-runtime/runtime';
+import 'regenerator-runtime/runtime'; // eslint-disable-line
 import 'phaser'; // eslint-disable-line
 import config from './Config/config';
 import WorldScene from './scenes/WorldScene';

@@ -1,4 +1,4 @@
-import 'phaser';
+import 'phaser'; // eslint-disable-line
 
 export default class Button extends Phaser.GameObjects.Container { // eslint-disable-line
   constructor(scene, x, y, key1, key2, text, targetScene) {

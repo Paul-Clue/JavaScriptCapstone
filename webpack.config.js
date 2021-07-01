@@ -1,6 +1,6 @@
 const path = require('path');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const webpack = require('webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin'); // eslint-disable-line
+const webpack = require('webpack'); // eslint-disable-line
 
 module.exports = {
   entry: {
