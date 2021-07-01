@@ -2,7 +2,7 @@
 
 # Secret Ninja Star
 
-![screenshot](Screenshot.png)
+![screenshot](../Screenshot.png)
 
 # Game Design Document
 
