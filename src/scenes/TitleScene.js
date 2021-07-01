@@ -1,4 +1,4 @@
-import 'phaser';
+import 'phaser'; // eslint-disable-line
 import config from '../Config/config';
 import model from '../Model'; // eslint-disable-line
 import Button from '../Objects/Button';

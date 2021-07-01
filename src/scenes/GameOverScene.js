@@ -1,4 +1,4 @@
-import 'phaser';
+import 'phaser'; // eslint-disable-line
 import { postData } from './functions';
 
 export default class GameOverScene extends Phaser.Scene { // eslint-disable-line

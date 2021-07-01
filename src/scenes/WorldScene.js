@@ -1,4 +1,4 @@
-import 'phaser';
+import 'phaser'; // eslint-disable-line
 
 export default class WorldScene extends Phaser.Scene { // eslint-disable-line
   constructor() {

@@ -1,4 +1,4 @@
-import 'phaser';
+import 'phaser'; // eslint-disable-line
 import { datas } from './scenes/functions';
 
 export default class leaderBoardScene extends Phaser.Scene { // eslint-disable-line
